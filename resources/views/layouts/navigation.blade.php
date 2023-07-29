@@ -18,8 +18,8 @@
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('chatify')" :active="request()->routeIs('chatify')">
-                        {{ __('chatify') }}
+                    <x-nav-link :href="route('chatBuntu')" :active="request()->routeIs('chatBuntu')">
+                        {{ __('chatBuntu') }}
                     </x-nav-link>
                 </div>
 

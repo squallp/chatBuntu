@@ -30,9 +30,14 @@
                 <p class="messenger-title"><span>Favorites</span></p>
                 <div class="messenger-favorites app-scroll-hidden"></div>
                </div>
+
                {{-- Saved Messages --}}
+               {{--
+                <!--
                <p class="messenger-title"><span>Your Space</span></p>
                {!! view('Chatify::layouts.listItem', ['get' => 'saved']) !!}
+                -->
+                --}}
                {{-- Contact --}}
                <p class="messenger-title"><span>All Messages</span></p>
                <div class="listOfContacts" style="width: 100%;height: calc(100% - 272px);position: relative;"></div>
@@ -57,14 +62,23 @@
                 <div class="chatify-d-flex chatify-justify-content-between chatify-align-items-center">
                     <a href="#" class="show-listView"><i class="fas fa-arrow-left"></i></a>
                     <div class="avatar av-s header-avatar" style="margin: 0px 10px; margin-top: -5px; margin-bottom: -5px;">
+                        <img src="{{ asset('img/chatBuntuLogo.png') }}" alt="chatBuntu">
                     </div>
                     <a href="#" class="user-name">{{ config('chatify.name') }}</a>
                 </div>
                 {{-- header buttons --}}
                 <nav class="m-header-right">
                     <a href="#" class="add-to-favorite"><i class="fas fa-star"></i></a>
-                    <a href="/"><i class="fas fa-home"></i></a>
                     <a href="#" class="show-infoSide"><i class="fas fa-info-circle"></i></a>
+                     <a href="#" ><form class="logoutForma" style="padding: 0px!important;margin: 0px!important;" method="POST" action="{{ route('logout') }}">
+                         @csrf
+
+                           <x-dropdown-link :href="route('logout')"
+                                    onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                <i class="fas fa-stop-circle"></i>
+                        </x-dropdown-link>
+                    </form></a>
                 </nav>
             </nav>
             {{-- Internet connection --}}
