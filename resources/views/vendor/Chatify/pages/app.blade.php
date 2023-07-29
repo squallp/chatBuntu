@@ -4,14 +4,17 @@
     <div class="messenger-listView {{ !!$id ? 'conversation-active' : '' }}">
         {{-- Header and search bar --}}
         <div class="m-header">
-            <nav>
-                <a href="#"><i class="fas fa-inbox"></i> <span class="messenger-headTitle">MESSAGES</span> </a>
+            
+            
+                
                 {{-- header buttons --}}
                 <nav class="m-header-right">
+                    <img class="av-s left" src="{{ asset('img/chatBuntuLogo.png') }}" alt="chatBuntu">
                     <a href="#"><i class="fas fa-cog settings-btn"></i></a>
                     <a href="#" class="listView-x"><i class="fas fa-times"></i></a>
                 </nav>
-            </nav>
+            
+
             {{-- Search input --}}
             <input type="text" class="messenger-search" placeholder="Search" />
             {{-- Tabs --}}
@@ -61,7 +64,9 @@
                 {{-- header back button, avatar and user name --}}
                 <div class="chatify-d-flex chatify-justify-content-between chatify-align-items-center">
                     <a href="#" class="show-listView"><i class="fas fa-arrow-left"></i></a>
-                    <img class="av-s" src="{{ asset('img/chatBuntuLogo.png') }}" alt="chatBuntu" style="margin: 0px 10px; margin-top: -5px; margin-bottom: -5px;">
+                    
+                    <img class="av-s" src="{{ asset('img/chatBuntuLogo.png') }}" alt="chatBuntu">   
+                    
                     <div class="avatar av-s header-avatar" style="margin: 0px 10px; margin-top: -5px; margin-bottom: -5px;">
 
                     </div>
