@@ -61,8 +61,9 @@
                 {{-- header back button, avatar and user name --}}
                 <div class="chatify-d-flex chatify-justify-content-between chatify-align-items-center">
                     <a href="#" class="show-listView"><i class="fas fa-arrow-left"></i></a>
+                    <img class="av-s" src="{{ asset('img/chatBuntuLogo.png') }}" alt="chatBuntu" style="margin: 0px 10px; margin-top: -5px; margin-bottom: -5px;">
                     <div class="avatar av-s header-avatar" style="margin: 0px 10px; margin-top: -5px; margin-bottom: -5px;">
-                        <img src="{{ asset('img/chatBuntuLogo.png') }}" alt="chatBuntu">
+
                     </div>
                     <a href="#" class="user-name">{{ config('chatify.name') }}</a>
                 </div>
