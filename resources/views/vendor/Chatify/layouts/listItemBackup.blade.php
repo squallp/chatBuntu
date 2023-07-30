@@ -1,6 +1,24 @@
 {{-- -------------------- Saved Messages -------------------- --}}
 @if($get == 'saved')
-
+ {{--
+<!--
+    <table class="messenger-list-item" data-contact="{{ Auth::user()->id }}">
+        <tr data-action="0">
+            {{-- Avatar side --}}
+            <td>
+            <div class="saved-messages avatar av-m">
+                <span class="far fa-bookmark"></span>
+            </div>
+            </td>
+            {{-- center side --}}
+            <td>
+                <p data-id="{{ Auth::user()->id }}" data-type="user">Saved Messages <span>You</span></p>
+                <span>Save messages secretly</span>
+            </td>
+        </tr>
+    </table>
+-->
+--}}
 @endif
 
 {{-- -------------------- Contact list -------------------- --}}
@@ -24,11 +42,24 @@ $lastMessageBody = strlen($lastMessageBody) > 30 ? mb_substr($lastMessageBody, 0
         <td>
         <p data-id="{{ $user->id }}" data-type="user">
             {{ strlen($user->name) > 12 ? trim(substr($user->name,0,12)).'..' : $user->name }}
-            <span class="contact-item-time" data-time="{{$lastMessage->created_at}}"></span></p>
+            <span class="contact-item-time" data-time="{{$lastMessage->created_at}}">{{ $lastMessage->timeAgo }}</span></p>
         <span>
 
-            Last message:{{ $lastMessage->timeAgo }}
+            {{-- Last Message user indicator --}}
             
+            {!!
+                $lastMessage->from_id == Auth::user()->id
+                ? '<span class="lastMessageIndicator">You :</span>'
+                : ''
+            !!}
+            {{-- Last message body --}}
+            @if($lastMessage->attachment == null)
+            {!!
+                $lastMessageBody
+            !!}
+            @else
+            <span class="fas fa-file"></span> Attachment
+            @endif
         </span>
         {{-- New messages counter --}}
             {!! $unseenCounter > 0 ? "<b>".$unseenCounter."</b>" : '' !!}
