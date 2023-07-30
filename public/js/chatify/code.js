@@ -494,9 +494,9 @@ function sendMessage() {
             `.message-card[data-id=${data.tempID}]`
           );
           // add the message card coming from the server before the temp-card
-          //tempMsgCardElement.before(data.message);
+          tempMsgCardElement.before(data.message);
           // then, remove the temporary message card
-          //tempMsgCardElement.remove();
+          tempMsgCardElement.remove();
           // scroll to bottom
           scrollToBottom(messagesContainer);
           // send contact item updates
@@ -631,6 +631,7 @@ initClientChannel();
 channel.bind("messaging", function (data) {
   if (data.from_id == getMessengerId() && data.to_id == auth_id) {
     $(".messages").find(".message-hint").remove();
+    console.log(data.message);
     messagesContainer.find(".messages").append(data.message);
     scrollToBottom(messagesContainer);
     makeSeen(true);
