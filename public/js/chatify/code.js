@@ -457,7 +457,7 @@ function sendMessage() {
       contentType: false,
       beforeSend: () => {
         // remove message hint
-        $(".messages").find(".message-hint").hide();
+        //$(".messages").find(".message-hint").hide();
         // append a temporary message card
         if (hasFile) {
           messagesContainer
