@@ -494,7 +494,7 @@ function sendMessage() {
             `.message-card[data-id=${data.tempID}]`
           );
           // add the message card coming from the server before the temp-card
-          tempMsgCardElement.before(data.message);
+          //tempMsgCardElement.before(data.message);
           // then, remove the temporary message card
           //tempMsgCardElement.remove();
           // scroll to bottom
