@@ -496,7 +496,7 @@ function sendMessage() {
           // add the message card coming from the server before the temp-card
           //tempMsgCardElement.before(data.message);
           // then, remove the temporary message card
-          tempMsgCardElement.remove();
+          //tempMsgCardElement.remove();
           // scroll to bottom
           scrollToBottom(messagesContainer);
           // send contact item updates
