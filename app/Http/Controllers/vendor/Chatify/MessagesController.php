@@ -135,7 +135,8 @@ class MessagesController extends Controller
             $message = Chatify::newMessage([
                 'from_id' => Auth::user()->id,
                 'to_id' => $request['id'],
-                'body' => Crypt::encrypt(htmlentities(trim($request['message']), ENT_QUOTES, 'UTF-8')),
+                'body' => htmlentities(trim($request['message']), ENT_QUOTES, 'UTF-8'),
+                'body_cripted' => Crypt::encrypt(htmlentities(trim($request['message']), ENT_QUOTES, 'UTF-8')),
                 'attachment' => ($attachment) ? json_encode((object)[
                     'new_name' => $attachment,
                     'old_name' => htmlentities(trim($attachment_title), ENT_QUOTES, 'UTF-8'),
