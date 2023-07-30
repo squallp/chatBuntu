@@ -1,5 +1,4 @@
 <?php
-use Illuminate\Support\Facades\Crypt;
 $seenIcon = (!!$seen ? 'check-double' : 'check');
 $timeAndSeen = "<span data-time='$created_at' class='message-time'>
         ".($isSender ? "<span class='fas fa-$seenIcon' seen'></span>" : '' )." <span class='time'>$timeAgo</span>
