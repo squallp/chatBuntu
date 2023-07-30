@@ -631,7 +631,6 @@ initClientChannel();
 channel.bind("messaging", function (data) {
   if (data.from_id == getMessengerId() && data.to_id == auth_id) {
     $(".messages").find(".message-hint").remove();
-    console.log(data.message);
     messagesContainer.find(".messages").append(data.message);
     scrollToBottom(messagesContainer);
     makeSeen(true);
