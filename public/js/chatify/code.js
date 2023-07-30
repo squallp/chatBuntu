@@ -157,7 +157,7 @@ function sendTempMessageCard(message, id) {
  <div class="message-card mc-sender" data-id="${id}">
      <div class="message-card-content">
          <div class="message">
-             ${message}
+             aaa
              <sub>
                  <span class="far fa-clock"></span>
              </sub>
@@ -563,7 +563,7 @@ function fetchMessages(id, newFetch = false) {
             messagesElement.find(".message-card")[0]
           );
           const curOffset =
-            lastMsg.offset().top - messagesContainer.scrollTop();
+          lastMsg.offset().top - messagesContainer.scrollTop();
           messagesElement.prepend(data.messages);
           messagesContainer.scrollTop(lastMsg.offset().top - curOffset);
         }
