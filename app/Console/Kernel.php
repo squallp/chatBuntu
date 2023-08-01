@@ -16,8 +16,9 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
          $schedule->call(function () {
+            //DB::table('ch_messages')->where('seen', 1)->delete();
             DB::table('ch_messages')->delete();
-        })->everyMinute();
+        });
     }
 
     /**
