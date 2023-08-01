@@ -157,7 +157,7 @@ function sendTempMessageCard(message, id) {
  <div class="message-card mc-sender" data-id="${id}">
      <div class="message-card-content">
          <div class="message">
-             aaa
+             ${message}
              <sub>
                  <span class="far fa-clock"></span>
              </sub>

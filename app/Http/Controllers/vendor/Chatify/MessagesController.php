@@ -190,7 +190,6 @@ class MessagesController extends Controller
         }
         $allMessages = null;
 
-        //<?php $newmessage = Crypt::decrypt($message); 
         foreach ($messages->reverse() as $message) {
             $message->body = Crypt::decrypt($message->body);
             $allMessages .= Chatify::messageCard(
