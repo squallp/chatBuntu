@@ -43,7 +43,7 @@
   // Usage
   grecaptcha.ready(function(){
     grecaptcha.render("container", {
-      sitekey: "ABC-123"
+      sitekey: "6LfBaXknAAAAAPrsZqmVYq0sryHLgSuRQpIAJgrI"
     });
   });
 </script>
