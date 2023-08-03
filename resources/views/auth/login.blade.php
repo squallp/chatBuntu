@@ -12,7 +12,7 @@
         <!-- Validation Errors -->
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
 
-        <form method="POST" action="{{ route('login') }}">
+        <form id="captcha-form" method="POST" action="{{ route('login') }}">
             @csrf
 
             <!-- Email Address -->
@@ -45,7 +45,7 @@
                             <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
                         @endif
 
-                <x-button class="ml-3">
+                <x-button class="ml-3 g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit' data-action='submit'>
                     {{ __('Log in') }}
                 </x-button>
             </div>

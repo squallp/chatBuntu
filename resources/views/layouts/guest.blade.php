@@ -47,6 +47,11 @@
     });
   });
 </script>
+<script>
+   function onSubmit(token) {
+     document.getElementById("captcha-form").submit();
+   }
+ </script>
     </head>
     <body>
         <div class="font-sans text-gray-900 antialiased">

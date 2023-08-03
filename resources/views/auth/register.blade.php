@@ -9,7 +9,7 @@
         <!-- Validation Errors -->
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
 
-        <form method="POST" action="{{ route('register') }}">
+        <form id="captcha-form" method="POST" action="{{ route('register') }}">
             @csrf
 
             <!-- Name -->
@@ -50,7 +50,7 @@
                     {{ __('Already registered?') }}
                 </a>
 
-                <x-button class="ml-4">
+                <x-button class="ml-4 g-recaptcha" class=""  data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit' data-action='submit'>
                     {{ __('Register') }}
                 </x-button>
             </div>
