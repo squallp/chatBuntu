@@ -40,12 +40,7 @@
     }
   }
 
-  // Usage
-  grecaptcha.ready(function(){
-    grecaptcha.render("container", {
-      sitekey: "6LfBaXknAAAAAPrsZqmVYq0sryHLgSuRQpIAJgrI"
-    });
-  });
+
 </script>
 <script>
    function onSubmit(token) {
