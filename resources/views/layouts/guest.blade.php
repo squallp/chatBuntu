@@ -16,7 +16,7 @@
 
 <link rel="preconnect" href="https://www.google.com">
 <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
-<script async src="https://www.google.com/recaptcha/api.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LfBaXknAAAAAPrsZqmVYq0sryHLgSuRQpIAJgrI"></script>
 <script>
    function onSubmit(token) {
      document.getElementById("captcha-form").submit();
