@@ -1518,6 +1518,15 @@ $(document).ready(function () {
     });
   });
 
+   // Settings button action to show settings modal
+  $("body").on("click", ".logout-btn", function (e) {
+    e.preventDefault();
+    app_modal({
+      show: true,
+      name: "logout",
+    });
+  });
+
   // on submit settings' form
   $("#update-settings").on("submit", (e) => {
     e.preventDefault();

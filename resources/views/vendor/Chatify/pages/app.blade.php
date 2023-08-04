@@ -12,6 +12,8 @@
                     <img class="av-s left" src="{{ asset('img/chatBuntuLogo.png') }}" alt="chatBuntu">
                     <a href="#"><i class="fas fa-cog settings-btn"></i></a>
                     <a href="#" class="listView-x"><i class="fas fa-times"></i></a>
+                    <a href="#" class="show-infoSide"><i class="fas fa-info-circle"></i></a>
+                     <a href="#" class="logout-btn"><i class="fas fa-stop-circle"></i></a>
                 </nav>
             
 
@@ -74,16 +76,6 @@
                 {{-- header buttons --}}
                 <nav class="m-header-right">
                     <a href="#" class="add-to-favorite"><i class="fas fa-star"></i></a>
-                    <a href="#" class="show-infoSide"><i class="fas fa-info-circle"></i></a>
-                     <a href="#" ><form class="logoutForma" style="padding: 0px!important;margin: 0px!important;" method="POST" action="{{ route('logout') }}">
-                         @csrf
-
-                           <x-dropdown-link :href="route('logout')"
-                                    onclick="event.preventDefault();
-                                                this.closest('form').submit();">
-                                <i class="fas fa-stop-circle"></i>
-                        </x-dropdown-link>
-                    </form></a>
                 </nav>
             </nav>
             {{-- Internet connection --}}
