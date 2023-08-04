@@ -14,7 +14,13 @@
 
         <form id="captcha-form" method="POST" action="{{ route('login') }}">
             @csrf
-
+            <div>
+                ChatBuntu is an anonymous messenger with cyfered temporary kept communication.<br />
+                That means you don't need to register with real mail adress or to own one. All your messeges(except images) are cyripted and kept for a short time. Unseen messages are kept for a day and seen messages are kept for 6 hours. 
+                You have possbility to delete your conversation at all time and it would be unaccesible to anyone. 
+                <br />
+                <br />
+            </div>
             <!-- Email Address -->
             <div>
                 <x-label for="email" :value="__('Email')" />
