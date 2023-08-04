@@ -19,6 +19,7 @@
                 That means you don't need to register with real mail adress or to own one. All your messeges(except images) are cyripted and kept for a short time. Unseen messages are kept for a day and seen messages are kept for 6 hours. 
                 You have possbility to delete your conversation at all time and it would be unaccesible to anyone. 
                 <strong>This project is in PRODUCTION</strong>
+                Info on squall.p@gmail.com
                 <br />
                 <br />
             </div>
