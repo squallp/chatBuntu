@@ -1,0 +1,30 @@
+[28-Jul-2023 11:20:12 America/Chicago] PHP Warning:  require(/home1/chatbuntu/chatBuntu/vendor/autoload.php): Failed to open stream: No such file or directory in /home1/chatbuntu/chatBuntu/artisan on line 18
+[28-Jul-2023 11:20:12 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/chatbuntu/chatBuntu/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/chatbuntu/chatBuntu/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /home1/chatbuntu/chatBuntu/artisan on line 18
+[28-Jul-2023 11:22:45 America/Chicago] PHP Warning:  require(/home1/chatbuntu/chatBuntu/vendor/autoload.php): Failed to open stream: No such file or directory in /home1/chatbuntu/chatBuntu/artisan on line 18
+[28-Jul-2023 11:22:45 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/chatbuntu/chatBuntu/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/chatbuntu/chatBuntu/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /home1/chatbuntu/chatBuntu/artisan on line 18
+[28-Jul-2023 11:23:02 America/Chicago] PHP Warning:  require(/home1/chatbuntu/chatBuntu/vendor/autoload.php): Failed to open stream: No such file or directory in /home1/chatbuntu/chatBuntu/artisan on line 18
+[28-Jul-2023 11:23:02 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/chatbuntu/chatBuntu/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/chatbuntu/chatBuntu/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /home1/chatbuntu/chatBuntu/artisan on line 18
+[28-Jul-2023 11:23:59 America/Chicago] PHP Warning:  require(/home1/chatbuntu/chatBuntu/vendor/autoload.php): Failed to open stream: No such file or directory in /home1/chatbuntu/chatBuntu/artisan on line 18
+[28-Jul-2023 11:23:59 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/chatbuntu/chatBuntu/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/chatbuntu/chatBuntu/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /home1/chatbuntu/chatBuntu/artisan on line 18
+[28-Jul-2023 11:25:29 America/Chicago] PHP Warning:  require(/home1/chatbuntu/chatBuntu/vendor/autoload.php): Failed to open stream: No such file or directory in /home1/chatbuntu/chatBuntu/artisan on line 18
+[28-Jul-2023 11:25:29 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/chatbuntu/chatBuntu/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/chatbuntu/chatBuntu/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /home1/chatbuntu/chatBuntu/artisan on line 18
+[28-Jul-2023 11:25:32 America/Chicago] PHP Warning:  require(/home1/chatbuntu/chatBuntu/vendor/autoload.php): Failed to open stream: No such file or directory in /home1/chatbuntu/chatBuntu/artisan on line 18
+[28-Jul-2023 11:25:32 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/chatbuntu/chatBuntu/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/chatbuntu/chatBuntu/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /home1/chatbuntu/chatBuntu/artisan on line 18
