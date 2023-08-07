@@ -17,40 +17,25 @@
           </div>
       </div>
   </div>
-  {{-- ---------------------- Delete cwhole chat Modal ---------------------- --}}
-  <div class="app-modal" data-name="delete-whole">
-      <div class="app-modal-container">
-          <div class="app-modal-card" data-name="delete-whole" data-modal='0'>
-              <div class="app-modal-header">Are you sure you want to delete all your conversations?</div>
-              <div class="app-modal-body">You can not undo this action</div>
-              <div class="app-modal-footer">
-                  <a href="javascript:void(0)" class="app-btn cancel">Cancel</a>
-                  <a href="javascript:void(0)" class="app-btn a-btn-danger delete">Delete</a>
-              </div>
-          </div>
-      </div>
-  </div>
-    {{-- ---------------------- Logout Modal ---------------------- --}}
+  {{-- ---------------------- Logout Modal ---------------------- --}}
   <div class="app-modal" data-name="logout">
       <div class="app-modal-container">
           <div class="app-modal-card" data-name="logout" data-modal='0'>
               <div class="app-modal-header">Are you sure you want to log-out?</div>
-              <div class="app-modal-body">You can not undo this action</div>
               <div class="app-modal-footer">
                   <a href="javascript:void(0)" class="app-btn cancel">Cancel</a>
                   <form class="logoutForma" style="padding: 0px!important;margin: 0px!important;" method="POST" action="{{ route('logout') }}">
                          @csrf
-                           <a:href="route('logout')" class="app-btn a-btn-danger delete"
-                                    onclick="event.preventDefault();
-                                                this.closest('form').submit();">
-                                Logout
-                        </a>
-                    </form>
+                    <a:href="route('logout')" class="app-btn a-btn-danger delete"
+                      onclick="event.preventDefault();
+                      this.closest('form').submit();">
+                      Logout
+                      </a>
+                  </form>
               </div>
           </div>
       </div>
   </div>
-  <a href="#" class="logout-btn"><i class="fas fa-stop-circle"></i></a>
   {{-- ---------------------- Alert Modal ---------------------- --}}
   <div class="app-modal" data-name="alert">
       <div class="app-modal-container">

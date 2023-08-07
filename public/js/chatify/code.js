@@ -154,7 +154,7 @@ function avatarLoading(items) {
 // While sending a message, show this temporary message card.
 function sendTempMessageCard(message, id) {
   return `
- <div class="message-card mc-sender" data-id="${id}">
+ <div class="message-card mc-sender temporary" data-id="${id}">
      <div class="message-card-content">
          <div class="message">
              ${message}
@@ -1528,6 +1528,15 @@ $(document).ready(function () {
       name: "logout",
     });
   });
+  // logout modal [cancel button]
+  $(".app-modal[data-name=logout]")
+    .find(".app-modal-footer .cancel")
+    .on("click", function () {
+      app_modal({
+        show: false,
+        name: "logout",
+      });
+    });
 
   // on submit settings' form
   $("#update-settings").on("submit", (e) => {
