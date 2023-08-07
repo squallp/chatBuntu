@@ -556,11 +556,6 @@ function fetchMessages(id, newFetch = false) {
         setMessagesLoading(false);
         if (messagesPage == 1) {
           messagesElement.html(data.messages);
-          /*
-          console.log("DataMesedjoni");
-          var encrypted_text = "eyJpdiI6IkUwcWxJMWc5UG91Nlh5UlV1ZFZwTXc9PSIsInZhbHVlIjoiMDh1WEkveitQOG1EdU1GSWNXelR6QT09IiwibWFjIjoiYjdjMTM2ZDFmOGZlN2FiODJjNWNlZjVmMWI2MzliZTU0NWEwZTlkZDIyZjFjMWIzZjc5NzkzMGY3MTJkNzVjZCIsInRhZyI6IiJ9";
-          console.log(decrypt(encrypted_text)); 
-          */
           scrollToBottom(messagesContainer);
         } else {
           const lastMsg = messagesElement.find(
