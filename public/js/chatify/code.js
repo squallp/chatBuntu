@@ -557,6 +557,8 @@ function fetchMessages(id, newFetch = false) {
         setMessagesLoading(false);
         if (messagesPage == 1) {
           messagesElement.html(data.messages);
+          console.log("DataMesedjoni");
+          console.log(data.messages);
           scrollToBottom(messagesContainer);
         } else {
           const lastMsg = messagesElement.find(

@@ -1,3 +1,6 @@
+//importing cryptoJS
+import CryptoJS from 'crypto-js';
+
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
