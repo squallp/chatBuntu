@@ -1,0 +1,1 @@
+<img src="{{ asset('img/chatBuntuLogo.png') }}" alt="chatBuntu" width="160">
