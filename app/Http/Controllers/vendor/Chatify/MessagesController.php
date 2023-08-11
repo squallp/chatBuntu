@@ -14,7 +14,6 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Request as FacadesRequest;
 use Illuminate\Support\Str;
-use Illuminate\Support\Facades\Crypt;
 
 class MessagesController extends Controller
 {
@@ -135,7 +134,7 @@ class MessagesController extends Controller
             $message = Chatify::newMessage([
                 'from_id' => Auth::user()->id,
                 'to_id' => $request['id'],
-                'body' => Crypt::encrypt(htmlentities(trim($request['message']), ENT_QUOTES, 'UTF-8')),
+                'body' => htmlentities(trim($request['message']), ENT_QUOTES, 'UTF-8'),
                 //'body' => htmlentities(trim($request['message']), ENT_QUOTES, 'UTF-8'),
                 'attachment' => ($attachment) ? json_encode((object)[
                     'new_name' => $attachment,
@@ -192,7 +191,6 @@ class MessagesController extends Controller
         $allMessages = null;
 
         foreach ($messages->reverse() as $message) {
-            $message->body = Crypt::decrypt($message->body);
             $allMessages .= Chatify::messageCard(
                 Chatify::parseMessage($message)
             );
