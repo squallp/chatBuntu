@@ -11,6 +11,11 @@
 
         <form id="captcha-form" method="POST" action="{{ route('register') }}">
             @csrf
+            <div>
+                You can have imaginary mail like something@something.com but remember that you cannot retrieve an account if you forgot your email or password.
+                <br />
+                <br />
+            </div>
 
             <!-- Name -->
             <div>
