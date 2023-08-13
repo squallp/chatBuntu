@@ -2,20 +2,19 @@
 <div class="messenger">
     {{-- ----------------------Users/Groups lists side---------------------- --}}
     <div class="messenger-listView {{ !!$id ? 'conversation-active' : '' }}">
+
         {{-- Header and search bar --}}
         <div class="m-header">
-            
-            
-                
                 {{-- header buttons --}}
-                <nav class="m-header-right">
-                    <img class="av-s left" src="{{ asset('img/chatBuntuLogo.png') }}" alt="chatBuntu">
+                <nav class="chatify-d-flex chatify-justify-content-between chatify-align-items-center">
+                    <img class="av-s left" src="{{ asset('img/chatBuntuLogo.png') }}" alt="chatBuntu logo">
+                    <div>
                     <a href="#"><i class="fas fa-cog settings-btn"></i></a>
                     <a href="#" class="listView-x"><i class="fas fa-times"></i></a>
                      <a href="#" class="logout-btn"><i class="fas fa-stop-circle"></i></a>
+                     </div>
                 </nav>
-            
-
+        
             {{-- Search input --}}
             <input type="text" class="messenger-search" placeholder="Search" />
             {{-- Tabs --}}
