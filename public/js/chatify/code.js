@@ -1518,7 +1518,7 @@ $(document).ready(function () {
     });
   });
 
-   // Settings button action to show settings modal
+   // logout button action to show logout modal
   $("body").on("click", ".logout-btn", function (e) {
     e.preventDefault();
     app_modal({
@@ -1533,6 +1533,23 @@ $(document).ready(function () {
       app_modal({
         show: false,
         name: "logout",
+      });
+    });
+    // Settings button action to show manuals modal
+  $("body").on("click", ".manuals-btn", function (e) {
+    e.preventDefault();
+    app_modal({
+      show: true,
+      name: "manuals",
+    });
+  });
+  // manuals modal [cancel button]
+  $(".app-modal[data-name=manuals]")
+    .find(".app-modal-footer .cancel")
+    .on("click", function () {
+      app_modal({
+        show: false,
+        name: "manuals",
       });
     });
 
