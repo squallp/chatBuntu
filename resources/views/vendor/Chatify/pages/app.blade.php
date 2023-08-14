@@ -7,7 +7,7 @@
         <div class="m-header">
                 {{-- header buttons --}}
                 <nav class="chatify-d-flex chatify-justify-content-between chatify-align-items-center">
-                    <img class="av-s left" src="{{ asset('img/chatBuntuLogo.png') }}" alt="chatBuntu logo">
+                    <img class="av-s left" src="{{ asset('img/chatBuntuLogo300x300.png') }}" alt="chatBuntu logo">
                     <div>
                     <a href="#"><i class="fas fa-cog settings-btn"></i></a>
                     <a href="#" class="listView-x"><i class="fas fa-times"></i></a>

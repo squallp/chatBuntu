@@ -1,1 +1,1 @@
-<img src="{{ asset('img/chatBuntuLogo.png') }}" alt="chatBuntu" width="160">
+<img src="{{ asset('img/chatBuntuLogo300x300.png') }}" alt="chatBuntu" width="160">
