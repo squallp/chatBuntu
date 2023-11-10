@@ -17,10 +17,12 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
          $schedule->call(function () {
+            /*
             //Deleting unseen messages older than day -time diff
             DB::table('ch_messages')->whereRaw('created_at < DATE_SUB(NOW(), INTERVAL 1 DAY)')->where('seen','=',0)->delete();
             //Deleting seen messages older than 6 hours -time diff
             DB::table('ch_messages')->whereRaw('created_at < DATE_SUB(NOW(), INTERVAL 480 MINUTE)')->where('seen','=',1)->delete();
+            */
         });
     }
 

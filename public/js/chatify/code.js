@@ -1517,15 +1517,26 @@ $("body").on("click", ".settings-btn", function (e) {
   });
 });
 
+<<<<<<< HEAD
    // Settings button action to show settings modal
 $("body").on("click", ".logout-btn", function (e) {
   e.preventDefault();
   app_modal({
     show: true,
     name: "logout",
+=======
+   // logout button action to show logout modal
+  $("body").on("click", ".logout-btn", function (e) {
+    e.preventDefault();
+    app_modal({
+      show: true,
+      name: "logout",
+    });
+>>>>>>> 72efddcd00ef62ac21e376b76b4f436de23e86ed
   });
 });
   // logout modal [cancel button]
+<<<<<<< HEAD
 $(".app-modal[data-name=logout]")
 .find(".app-modal-footer .cancel")
 .on("click", function () {
@@ -1534,6 +1545,33 @@ $(".app-modal[data-name=logout]")
     name: "logout",
   });
 });
+=======
+  $(".app-modal[data-name=logout]")
+    .find(".app-modal-footer .cancel")
+    .on("click", function () {
+      app_modal({
+        show: false,
+        name: "logout",
+      });
+    });
+    // Settings button action to show manuals modal
+  $("body").on("click", ".manuals-btn", function (e) {
+    e.preventDefault();
+    app_modal({
+      show: true,
+      name: "manuals",
+    });
+  });
+  // manuals modal [cancel button]
+  $(".app-modal[data-name=manuals]")
+    .find(".app-modal-footer .cancel")
+    .on("click", function () {
+      app_modal({
+        show: false,
+        name: "manuals",
+      });
+    });
+>>>>>>> 72efddcd00ef62ac21e376b76b4f436de23e86ed
 
   // on submit settings' form
 $("#update-settings").on("submit", (e) => {

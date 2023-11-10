@@ -17,6 +17,21 @@
           </div>
       </div>
   </div>
+  {{-- ---------------------- Manuals Modal ---------------------- --}}
+  <div class="app-modal" data-name="manuals">
+      <div class="app-modal-container">
+          <div class="app-modal-card" data-name="manuals" data-modal='0'>
+              <div class="app-modal-header">Manuals on how to make chatBuntu like an app</div>
+              <div class="app-modal-body">How to install chatBuntu as an web app on iOS:<br /> <a href="https://allthings.how/how-to-install-or-save-any-website-as-an-app-on-iphone-using-safari/" target="_blank" style="color:red">iOs manual</a><br /><br />
+                How to turn any website into a custom Chrome OS app:<br /> <a href="https://www.computerworld.com/article/3308496/custom-chrome-os-app.html" target="_blank" style="color:red">Chrome OS app manual</a><br /><br />
+                3 Ways to Turn Any Website Into an Android App:<br /> <a href="https://beebom.com/ways-turn-any-website-android-app/" target="_blank" style="color:red">Chrome OS app manual</a><br /><br />
+              </div>
+              <div class="app-modal-footer">
+                  <a href="javascript:void(0)" class="app-btn cancel">Cancel</a>
+              </div>
+          </div>
+      </div>
+  </div>
   {{-- ---------------------- Logout Modal ---------------------- --}}
   <div class="app-modal" data-name="logout">
       <div class="app-modal-container">
