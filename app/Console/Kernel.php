@@ -19,9 +19,9 @@ class Kernel extends ConsoleKernel
          $schedule->call(function () {
             
             //Deleting unseen messages older than day -time diff
-            DB::table('ch_messages')->whereRaw('created_at < DATE_SUB(NOW(), INTERVAL 1 DAY)')->where('seen','=',0)->update(array('body' => 'Poruka obrisana'));
+            DB::table('ch_messages')->whereRaw('created_at < DATE_SUB(NOW(), INTERVAL 1 DAY)')->where('seen','=',0)->update(array('body' => '<span class="obrisanap">Poruka obrisana od strane sistema</span>'));
             //Deleting seen messages older than 6 hours -time diff
-            DB::table('ch_messages')->whereRaw('created_at < DATE_SUB(NOW(), INTERVAL 480 MINUTE)')->where('seen','=',1)->update(array('body' => 'Poruka obrisana'));
+            DB::table('ch_messages')->whereRaw('created_at < DATE_SUB(NOW(), INTERVAL 480 MINUTE)')->where('seen','=',1)->update(array('body' => '<span class="obrisanap">Poruka obrisana od strane sistema</span>'));
         });
     }
 
